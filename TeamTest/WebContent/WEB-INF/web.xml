@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JSPProj</display-name>
+  
+  
+  <!-- 실험용 시작부분-->
+  
+    <servlet>
+    <servlet-name>NewFile1</servlet-name>
+    <servlet-class>controller.testinformation.NewFileController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewFile1</servlet-name>
+    <url-pattern>/aaaa/NewFile1.lib</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>NewFile2</servlet-name>
+    <servlet-class>controller.testinformation.aaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewFile2</servlet-name>
+    <url-pattern>/aa.lib</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 실험용 끝부분 -->
+  <!-- 이종면 서블릿 -->
+  
+  <servlet>
+    <servlet-name>Place</servlet-name>
+    <servlet-class>controller.testinformation.PlaceMainController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Place</servlet-name>
+    <url-pattern>/PlaceMain.do</url-pattern>
+  </servlet-mapping>
+
+  
+  
+  
+  <servlet>
+    <servlet-name>PlaceList</servlet-name>
+    <servlet-class>controller.testinformation.PlaceListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceList</servlet-name>
+    <url-pattern>/Place/List.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <servlet-name>PlaceRegistration</servlet-name>
+    <servlet-class>controller.testinformation.PlaceRegistrationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceRegistration</servlet-name>
+    <url-pattern>/Place/Registration.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PlaceEdit</servlet-name>
+    <servlet-class>controller.testinformation.PlaceEditController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceEdit</servlet-name>
+    <url-pattern>/Place/Edit.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PlaceDelete</servlet-name>
+    <servlet-class>controller.testinformation.PlaceDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceDelete</servlet-name>
+    <url-pattern>/Place/Delete.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>tr</servlet-name>
+    <servlet-class>controller.testinformation.tr</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tr</servlet-name>
+    <url-pattern>/Place/tr.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DistrictRegistration</servlet-name>
+    <servlet-class>controller.testinformation.DistrictRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DistrictRegistration</servlet-name>
+    <url-pattern>/District/Registration.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>District</servlet-name>
+    <servlet-class>controller.testinformation.DistrictMainController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>District</servlet-name>
+    <url-pattern>/TestInformation/District.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Post</servlet-name>
+    <servlet-class>controller.testinformation.PostMainController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Post</servlet-name>
+    <url-pattern>/TestInformation/Post.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  이종면 서블릿 끝 -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>HelloServelt</servlet-name>
+    <servlet-class>controller.HelloServelet</servlet-class>
+    <init-param>
+      <param-name>HELLO</param-name>
+      <param-value>Good Luck To You</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServelt</servlet-name>
+    <url-pattern>/HelloServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <servlet-class>controller.CalculatorServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <url-pattern>/Calculate.baewoom</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>contentType</servlet-name>
+    <servlet-class>controller.ContentTypeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contentType</servlet-name>
+    <url-pattern>/AniDir/SomeDir/SetContentType.baewoom</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>APPLICATION_JSP</servlet-name>
+    <jsp-file>/InnerObject_03/Application.jsp</jsp-file>
+    <init-param>
+      <param-name>SERVLET_INIT</param-name>
+      <param-value>서블릿 초기화 파라미터</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>APPLICATION_JSP</servlet-name>
+    <url-pattern>/InnerObject_03/Application.jsp</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>ORACLE_DRIVER</param-name>
+    <param-value>oracle.jdbc.OracleDriver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>ORACLE_URL</param-name>
+    <param-value>jdbc:oracle:thin://localhost:1521:orcl</param-value>
+  </context-param>
+  <context-param>
+    <param-name>PAGE_SIZE</param-name>
+    <param-value>3</param-value>
+  </context-param>
+  <context-param>
+    <param-name>BLOCK_PAGE</param-name>
+    <param-value>2</param-value>
+  </context-param>
+  <context-param>
+    <param-name>JNDI_ROOT</param-name>
+    <param-value>java:comp/env</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>/WEB-INF/tlds/mytaglib.tld</taglib-uri>
+      <taglib-location>	
+				/WEB-INF/tlds/mytaglib.tld
+			</taglib-location>
+    </taglib>
+  </jsp-config>
+  <servlet>
+    <servlet-name>DataRoomList</servlet-name>
+    <servlet-class>controller.dataroom.ListController</servlet-class>
+    <init-param>
+      <param-name>PAGE_SIZE</param-name>
+      <param-value>2</param-value>
+    </init-param>
+    <init-param>
+      <param-name>BLOCK_PAGE</param-name>
+      <param-value>2</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomList</servlet-name>
+    <url-pattern>/DataRoom/List.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataRoomWrite</servlet-name>
+    <servlet-class>controller.dataroom.WriteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomWrite</servlet-name>
+    <url-pattern>/DataRoom/Write.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataRoomDownload</servlet-name>
+    <servlet-class>controller.dataroom.DownloadController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomDownload</servlet-name>
+    <url-pattern>/DataRoom/Download.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataRoomView</servlet-name>
+    <servlet-class>controller.dataroom.ViewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomView</servlet-name>
+    <url-pattern>/DataRoom/View.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataRoomPassword</servlet-name>
+    <servlet-class>controller.dataroom.PasswordController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomPassword</servlet-name>
+    <url-pattern>/DataRoom/Password.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DataRoomUpdate</servlet-name>
+    <servlet-class>controller.dataroom.EditController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataRoomUpdate</servlet-name>
+    <url-pattern>/DataRoom/Edit.do</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/ERROR_14/ErrorCode.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/ERROR_14/ErrorType.jsp</location>
+  </error-page>
+  <welcome-file-list>
+    <welcome-file>HelloWorld.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
